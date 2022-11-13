@@ -1,0 +1,38 @@
+Jack Keller
+
+The name of the file to run is a Python file and is named DefMethodCodeTest.py
+
+This project was created using Python 3.9.2
+
+The project uses these libraries from Python:
+sys
+os
+datetime
+re
+
+TO RUN:
+
+It takes one command line argument which is the path to the directory containing the input text files
+
+Example: python ./DefMethodCodeTest.py C:/Desktop/DefMethodCodeTest/def-method-code-test-input-files
+
+TESTS
+
+Included in this zipped archive are folders containing various tests:
+
+1) an empty directory
+	(TO RUN TEST: python DefMethodCodeTest.py /path/to/def-method-code-test-input-files-empty)
+2) a directory of non-.txt files
+	(TO RUN TEST: python DefMethodCodeTest.py /path/to/def-method-code-test-input-files-non-text)
+3) a directory with .txt that have no corresponding delimiters
+	(TO RUN TEST: python DefMethodCodeTest.py /path/to/def-method-code-test-input-files-bad-delimeters)
+
+The file also detects if too many or no arguments are passed.
+
+The file also detects if the directory given exists.
+
+For each corresponding delimiter (comma, pipe, and space), the file is looking for the exact format provided.
+If it cannot find a provided format, it will alert the user.
+
+Automating the code tests would be the most efficient way to test. Whether that be included in this program or having
+a service dedicated to doing so is up for debate. I tried to account for all of the possibilities as I could think of.
